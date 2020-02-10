@@ -1,0 +1,262 @@
+*
+/* page d'accueuil */
+{
+  box-sizing: border-box;
+}
+.center { /* pour ma class de photo sur la page d'accueuil */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body { /* pour mon body avec mon genre de texte, la position et mon image de background */
+  background-image: url("../img/sable.jpg");
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+footer { /* pour les dimension de mon footer, le padding la couleur etc.. */
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+}
+nav { /*pour tous ce qui est des dimension, l'affichage, background color de mon menu (navigateur). Les propriétés -webkit-box-flex définissent
+        la façon dont une boîte -webkit-box s'étend pour remplir la boîte englobante, dans la direction indiquée par la disposition de la boîte.
+        En utilisant la valeur flex pour la propriété display, on génère une boîte pour un conteneur flexible de bloc. La valeur inline-flex
+        permet quant à elle de générer un conteneur flexible en ligne (inline).*/
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  padding: 10px;
+  background-color: #000;
+}
+.video-container { /*pour tous ce qui est des dimension, l'affichage, background color de mon menu (navigateur). Les propriétés -webkit-box-flex définissent
+        la façon dont une boîte -webkit-box s'étend pour remplir la boîte englobante, dans la direction indiquée par la disposition de la boîte.
+        En utilisant la valeur flex pour la propriété display, on génère une boîte pour un conteneur flexible de bloc. La valeur inline-flex
+        permet quant à elle de générer un conteneur flexible en ligne (inline).*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; /* pour activer l'option flex */
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between; /* support pour autre navigateur exemple explorer  */
+  -ms-flex-pack: justify;
+  justify-content: space-between; /*justifier le contenu avec un espace entre chaque element  */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center; /*   */
+  align-items: center; /* aligne les items au centre */
+}
+
+a:link { /*pour enlever le soulignement des liens ou les ligne en dessous des nom de navigateur/menu.*/
+  text-decoration: none;
+}
+.menuli { /*pour mettre de l'espace entre mes nom de menu/navigateur*/
+  padding-right: 25px;
+  padding-bottom: 8px;
+}
+header { /*pour la disposition de mon header et de ma photo de crocodile en haut */
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/croco.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 3em;
+}/*pour la largeur de ma baniere de crocodile */
+.bannertop {
+  width: 50%;
+}
+#wrap { /*pour la largeur de ma page et le wrapper */
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+ul { /*pour pas que mon ul est du style */
+  list-style-type: none;
+}
+.ftw:visited {
+  color: #fff;
+}
+.ftw { /*couleur et pading de ma class ftw */
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+
+.menu3 li { /*background et couleur du texte de mon menu/navigateur */
+  background-color: #1c2368;
+  color: #000;
+}
+
+main { /*la couleur de mon background main */
+  background-color: white;
+  padding: 2%;
+  font-size: 0;
+}
+section {/*les parametres de ma setion accueuil */
+  background-color: #fff;
+  padding: 1em;
+  overflow: hidden;
+  font-size: 1rem;
+}
+.section1 { /*tous les parametre de mon footer jusqu'au media query */
+  background-color: #fff;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.stack {
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  vertical-align: top;
+  margin-left: 1.7%;
+}
+.footerli {
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.footerul {
+  margin-right: 18px;
+  margin-bottom: 0px;
+  margin-left: 18px;
+  padding: 0px;
+}
+.footer-c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.imagefooter {
+  width: 40px;
+  padding: 0px;
+}
+.text-block {
+  width: 150px;
+  text-align: right;
+}
+.footertitre {
+  font-size: 20px;
+}
+/* ===================================================================== */
+@media screen and (max-width: 800px) {
+  #wrap {
+    width: inherit;
+  }
+  body {
+    background-color: black;
+  }
+  main {
+    height: inherit;
+  }
+  .stack {
+    display: block;
+    margin: 0;
+    margin-top: 2%;
+  }
+  /* ===================================================================== */
+  @media screen and (max-width: 767px) {
+    header {
+      height: 220px;
+    }
+    .video-container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+}
+/* ===================================================================== */
+@media screen and (max-width: 479px) {
+  #wrap {
+    width: inherit;
+  }
+  header {
+    height: 150px;
+  }
+  body {
+    background-color: black;
+  }
+  main {
+    height: inherit;
+  }
+  .imagemid {
+    width: 100%;
+  }
+  .stack, .section1, .section2, .section3 {
+    width: 100%;
+  }
+  .stack {
+    display: block;
+    margin: 0;
+    margin-top: 2%;
+  }
+}
+
+/*Le moustique */
+
+.centermoustique {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Le serpent */
+
+.centerserpent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Le chien */
+
+.centerchien {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ 
+ /*Le scorpion */
+ 
+ .centerscorpion {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Le Crocodile */
+
+ .centercrocodile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
