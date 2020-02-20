@@ -81,7 +81,7 @@ header { /*pour la disposition de mon header et de ma photo de crocodile en haut
   margin: auto;
   width: 100%;
 }
-ul { /*pour pas que mon ul est du style */
+ul { /*pour pas que mon ul est pas de style */
   list-style-type: none;
 }
 .ftw:visited {
@@ -132,7 +132,8 @@ section {/*les parametres de ma setion accueuil */
   margin-left: 18px;
   padding: 0px;
 }
-.footer-c {
+.footer-c {/*Les propriétés -webkit-box-flex définissent
+            *la façon dont une boîte -webkit-box s'étend pour remplir la boîte englobante*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -147,116 +148,117 @@ section {/*les parametres de ma setion accueuil */
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
-  align-items: flex-start;
+  align-items: flex-start;/*aligne les items*/
 }
 .imagefooter {
-  width: 40px;
-  padding: 0px;
+  width: 40px;/*largeur*/
+  padding: 0px;/*padding*/
 }
 .text-block {
-  width: 150px;
-  text-align: right;
+  width: 150px;/*largeur*/
+  text-align: right;/*aligne le texte a droite*/
 }
 .footertitre {
-  font-size: 20px;
+  font-size: 20px;/*grosseur police*/
 }
 /* ===================================================================== */
 @media screen and (max-width: 800px) {
   #wrap {
-    width: inherit;
+    width: inherit;/*largeur parent*/
   }
   body {
-    background-color: black;
+    background-color: black;/*couleur background*/
   }
   main {
-    height: inherit;
+    height: inherit;/*hauteur parent*/
   }
   .stack {
-    display: block;
-    margin: 0;
-    margin-top: 2%;
+    display: block;/*display en block*/
+    margin: 0;/*marge*/
+    margin-top: 2%;/*marge en haut*/
   }
   /* ===================================================================== */
   @media screen and (max-width: 767px) {
     header {
-      height: 220px;
+      height: 220px;/*hauteur*/
     }
     .video-container {
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+      -webkit-box-pack: center;/*Les propriétés CSS -webkit-box-pack définissent la façon dont une boîte
+                                *-webkit-box groupe son contenu dans la direction de la disposition. */
+      -webkit-justify-content: center;/*justifie au centre*/
+      -ms-flex-pack: center;/*-ms-flex-pack permet de spécifier la manière dont est distribuée l'espace restant entre les éléments */
+      justify-content: center;/*L'espace est réparti entre chacun des éléments fils*/
     }
   }
 }
 /* ===================================================================== */
 @media screen and (max-width: 479px) {
   #wrap {
-    width: inherit;
+    width: inherit;/*largeur qui prend les valeurs du parent*/
   }
   header {
-    height: 150px;
+    height: 150px;/*Hauteur*/
   }
   body {
-    background-color: black;
+    background-color: black;/*couleur background */
   }
   main {
-    height: inherit;
+    height: inherit;/*hauteur avec les valeurs du parent*/
   }
   .imagemid {
-    width: 100%;
+    width: 100%;/*largeur*/
   }
   .stack, .section1, .section2, .section3 {
-    width: 100%;
+    width: 100%;/*largeur section1,2,3*/
   }
   .stack {
-    display: block;
-    margin: 0;
-    margin-top: 2%;
+    display: block;/*display en block*/
+    margin: 0;/*marge*/
+    margin-top: 2%;/*marge en haut*/
   }
 }
 
-/*Le moustique */
+/*(Le moustique) css pour page moustique */
 
 .centermoustique {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  display: block;/*display en block*/
+  margin-left: auto;/*marge gauche*/
+  margin-right: auto;/*marge droite*/
+  width: 50%;/*largeur*/
 }
 
-/* Le serpent */
+/*(Le serpent) css pour page serpent */
 
 .centerserpent {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  display: block; /*display en block*/
+  margin-left: auto; /*marge gauche*/
+  margin-right: auto;/*marge droite*/
+  width: 50%; /*largeur*/
 }
 
-/*Le chien */
+/*(Le chien) css pour page chien */
 
 .centerchien {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  display: block;/*display en block*/
+  margin-left: auto;/*marge gauche*/
+  margin-right: auto;/*marge droite*/
+  width: 50%;/*largeur*/
 }
  
- /*Le scorpion */
+ /*(Le scorpion) css pour page scorpion */
  
  .centerscorpion {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  display: block;/*display en block*/
+  margin-left: auto;/*marge gauche*/
+  margin-right: auto;/*marge droite*/
+  width: 50%;/*largeur*/
 }
 
-/*Le Crocodile */
+/*(Le Crocodile) css pour page crocodile */
 
  .centercrocodile {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  display: block;/*display en block*/
+  margin-left: auto;/*marge gauche*/
+  margin-right: auto;/*marge droite*/
+  width: 50%;/*largeur*/
 }
